@@ -24,7 +24,7 @@ var (
 
 func consumeKafka() {
     r := kafka.NewReader(kafka.ReaderConfig{
-        Brokers: []string{"localhost:9092"},
+        Brokers: []string{"kafka:9092"},
         Topic:   "news-topic",
         GroupID: "article-group",
     })
