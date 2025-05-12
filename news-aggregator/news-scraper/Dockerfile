@@ -1,4 +1,4 @@
-FROM golang:1.20-alpine
+FROM golang:1.23-alpine
 # Removed invalid instruction
 
 WORKDIR /app
@@ -10,4 +10,4 @@ COPY . .
 
 RUN go build -o scraper .
 
-CMD ["./scraper"]
+CMD ["./news-scraper"]
